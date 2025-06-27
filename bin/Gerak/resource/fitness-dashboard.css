@@ -1,0 +1,988 @@
+/* ============================================
+   FITLIFE PRO - ELEGANT FITNESS DASHBOARD
+   JavaFX Compatible CSS with 3D Effects
+   ============================================ */
+
+/* ROOT VARIABLES - JavaFX Compatible */
+.root {
+    -fx-primary-color: #667eea;
+    -fx-primary-dark: #764ba2;
+    -fx-secondary-color: #f093fb;
+    -fx-secondary-dark: #f5576c;
+    -fx-accent-color: #4facfe;
+    -fx-accent-dark: #00f2fe;
+    -fx-success-color: #43e97b;
+    -fx-success-dark: #38f9d7;
+    -fx-warning-color: #fa709a;
+    -fx-warning-dark: #fee140;
+    -fx-dark-color: #2c3e50;
+    -fx-dark-secondary: #34495e;
+    -fx-light-color: #ffffff;
+    -fx-light-secondary: #f8f9fa;
+    
+    -fx-text-primary: #2c3e50;
+    -fx-text-secondary: #6c757d;
+    -fx-text-light: #ffffff;
+    -fx-background-main: #f8f9fa;
+    -fx-border-radius: 20px;
+}
+
+/* MAIN CONTAINER */
+.main-container {
+    -fx-background-color: linear-gradient(to bottom right, #f8f9fa, #e9ecef);
+    -fx-font-family: "Segoe UI", "Roboto", "Arial", sans-serif;
+}
+
+/* ============================================
+   TOP NAVIGATION
+   ============================================ */
+.top-nav {
+    -fx-background-color: linear-gradient(to bottom right, #667eea, #764ba2);
+    -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.3), 10, 0, 0, 3);
+    -fx-background-radius: 0 0 25 25;
+    -fx-padding: 15;
+}
+
+.logo-circle {
+    -fx-fill: linear-gradient(to bottom right, #43e97b, #38f9d7);
+    -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.4), 8, 0, 0, 2);
+    -fx-radius: 20;
+}
+
+.app-title {
+    -fx-text-fill: white;
+    -fx-font-size: 24px;
+    -fx-font-weight: bold;
+    -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.3), 2, 0, 0, 1);
+}
+
+.app-subtitle {
+    -fx-text-fill: #e8e8e8;
+    -fx-font-size: 12px;
+}
+
+.nav-btn {
+    -fx-background-color: transparent;
+    -fx-text-fill: white;
+    -fx-font-size: 14px;
+    -fx-padding: 10 20 10 20;
+    -fx-background-radius: 20px;
+    -fx-cursor: hand;
+    -fx-border-color: transparent;
+    -fx-border-width: 0;
+    -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.2), 3, 0, 0, 1);
+}
+
+.nav-btn:hover {
+    -fx-background-color: rgba(255,255,255,0.2);
+    -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.3), 5, 0, 0, 2);
+    -fx-scale-x: 1.05;
+    -fx-scale-y: 1.05;
+}
+
+.nav-btn-active {
+    -fx-background-color: linear-gradient(to bottom right, #43e97b, #38f9d7);
+    -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.4), 8, 0, 0, 3);
+    -fx-translate-y: -2;
+}
+
+.profile-avatar {
+    -fx-fill: linear-gradient(to bottom right, #f093fb, #f5576c);
+    -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.3), 5, 0, 0, 2);
+    -fx-radius: 18;
+}
+
+.user-name {
+    -fx-text-fill: white;
+    -fx-font-size: 14px;
+    -fx-font-weight: bold;
+}
+
+.user-status {
+    -fx-text-fill: #ffd700;
+    -fx-font-size: 11px;
+    -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.5), 1, 0, 0, 1);
+}
+
+/* ============================================
+   MAIN CONTENT
+   ============================================ */
+.main-scroll {
+    -fx-background-color: transparent;
+    -fx-hbar-policy: never;
+    -fx-vbar-policy: as-needed;
+}
+
+.content-container {
+    -fx-background-color: transparent;
+    -fx-padding: 20;
+    -fx-spacing: 20;
+}
+
+/* ============================================
+   WELCOME SECTION
+   ============================================ */
+.welcome-section {
+    -fx-background-color: linear-gradient(to bottom right, #667eea, #764ba2);
+    -fx-background-radius: 25px;
+    -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.3), 15, 0, 0, 8);
+    -fx-padding: 30;
+    -fx-border-insets: 0 0 5 0;
+    -fx-background-insets: 0 0 5 0;
+}
+
+.welcome-title {
+    -fx-text-fill: white;
+    -fx-font-size: 28px;
+    -fx-font-weight: bold;
+    -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.4), 3, 0, 0, 2);
+}
+
+.welcome-subtitle {
+    -fx-text-fill: #e8e8e8;
+    -fx-font-size: 16px;
+}
+
+/* ============================================
+   BUTTONS - Enhanced 3D Effects
+   ============================================ */
+.primary-btn {
+    -fx-background-color: linear-gradient(to bottom right, #43e97b, #38f9d7);
+    -fx-text-fill: white;
+    -fx-font-size: 14px;
+    -fx-font-weight: bold;
+    -fx-padding: 12 24 12 24;
+    -fx-background-radius: 25px;
+    -fx-cursor: hand;
+    -fx-border-width: 0;
+    -fx-effect: innershadow(gaussian, rgba(255,255,255,0.5), 5, 0.5, 0, 1),
+               dropshadow(gaussian, rgba(0,0,0,0.3), 8, 0, 0, 4);
+    -fx-translate-y: 0;
+    -fx-border-insets: 0 0 3 0;
+    -fx-background-insets: 0 0 3 0;
+}
+
+.primary-btn:hover {
+    -fx-background-color: linear-gradient(to bottom right, #38f9d7, #43e97b);
+    -fx-effect: innershadow(gaussian, rgba(255,255,255,0.7), 7, 0.7, 0, 1),
+               dropshadow(gaussian, rgba(0,0,0,0.4), 12, 0, 0, 6);
+    -fx-scale-x: 1.05;
+    -fx-scale-y: 1.05;
+    -fx-translate-y: -1;
+}
+
+.primary-btn:pressed {
+    -fx-effect: innershadow(gaussian, rgba(255,255,255,0.3), 3, 0.3, 0, 1),
+               dropshadow(gaussian, rgba(0,0,0,0.3), 5, 0, 0, 3);
+    -fx-translate-y: 1;
+}
+
+.secondary-btn {
+    -fx-background-color: linear-gradient(to bottom right, #f093fb, #f5576c);
+    -fx-text-fill: white;
+    -fx-font-size: 14px;
+    -fx-font-weight: bold;
+    -fx-padding: 12 24 12 24;
+    -fx-background-radius: 25px;
+    -fx-cursor: hand;
+    -fx-border-width: 0;
+    -fx-effect: innershadow(gaussian, rgba(255,255,255,0.5), 5, 0.5, 0, 1),
+               dropshadow(gaussian, rgba(0,0,0,0.3), 8, 0, 0, 4);
+    -fx-translate-y: 0;
+    -fx-border-insets: 0 0 3 0;
+    -fx-background-insets: 0 0 3 0;
+}
+
+.secondary-btn:hover {
+    -fx-background-color: linear-gradient(to bottom right, #f5576c, #f093fb);
+    -fx-effect: innershadow(gaussian, rgba(255,255,255,0.7), 7, 0.7, 0, 1),
+               dropshadow(gaussian, rgba(0,0,0,0.4), 12, 0, 0, 6);
+    -fx-scale-x: 1.05;
+    -fx-scale-y: 1.05;
+    -fx-translate-y: -1;
+}
+
+.secondary-btn:pressed {
+    -fx-effect: innershadow(gaussian, rgba(255,255,255,0.3), 3, 0.3, 0, 1),
+               dropshadow(gaussian, rgba(0,0,0,0.3), 5, 0, 0, 3);
+    -fx-translate-y: 1;
+}
+
+.accent-btn {
+    -fx-background-color: linear-gradient(to bottom right, #4facfe, #00f2fe);
+    -fx-text-fill: white;
+    -fx-font-size: 14px;
+    -fx-font-weight: bold;
+    -fx-padding: 12 24 12 24;
+    -fx-background-radius: 25px;
+    -fx-cursor: hand;
+    -fx-border-width: 0;
+    -fx-effect: innershadow(gaussian, rgba(255,255,255,0.5), 5, 0.5, 0, 1),
+               dropshadow(gaussian, rgba(0,0,0,0.3), 8, 0, 0, 4);
+    -fx-translate-y: 0;
+    -fx-border-insets: 0 0 3 0;
+    -fx-background-insets: 0 0 3 0;
+}
+
+.sleep-btn {
+    -fx-background-color: linear-gradient(to bottom right, #667eea, #764ba2);
+    -fx-text-fill: white;
+    -fx-font-size: 14px;
+    -fx-font-weight: bold;
+    -fx-padding: 12 24 12 24;
+    -fx-background-radius: 25px;
+    -fx-cursor: hand;
+    -fx-border-width: 0;
+    -fx-effect: innershadow(gaussian, rgba(255,255,255,0.5), 5, 0.5, 0, 1),
+               dropshadow(gaussian, rgba(0,0,0,0.3), 8, 0, 0, 4);
+}
+
+.workout-btn {
+    -fx-background-color: linear-gradient(to bottom right, #fa709a, #fee140);
+    -fx-text-fill: white;
+    -fx-font-size: 14px;
+    -fx-font-weight: bold;
+    -fx-padding: 12 24 12 24;
+    -fx-background-radius: 25px;
+    -fx-cursor: hand;
+    -fx-border-width: 0;
+    -fx-effect: innershadow(gaussian, rgba(255,255,255,0.5), 5, 0.5, 0, 1),
+               dropshadow(gaussian, rgba(0,0,0,0.3), 8, 0, 0, 4);
+}
+
+.accent-btn:hover {
+    -fx-background-color: linear-gradient(to bottom right, #00f2fe, #4facfe);
+    -fx-effect: innershadow(gaussian, rgba(255,255,255,0.7), 7, 0.7, 0, 1),
+               dropshadow(gaussian, rgba(0,0,0,0.4), 12, 0, 0, 6);
+    -fx-scale-x: 1.05;
+    -fx-scale-y: 1.05;
+    -fx-translate-y: -1;
+}
+
+.accent-btn:pressed {
+    -fx-effect: innershadow(gaussian, rgba(255,255,255,0.3), 3, 0.3, 0, 1),
+               dropshadow(gaussian, rgba(0,0,0,0.3), 5, 0, 0, 3);
+    -fx-translate-y: 1;
+}
+
+.start-btn {
+    -fx-background-color: linear-gradient(to bottom right, #fa709a, #fee140);
+    -fx-text-fill: white;
+    -fx-font-size: 12px;
+    -fx-font-weight: bold;
+    -fx-padding: 8 16 8 16;
+    -fx-background-radius: 20px;
+    -fx-cursor: hand;
+    -fx-border-width: 0;
+    -fx-effect: innershadow(gaussian, rgba(255,255,255,0.5), 4, 0.5, 0, 1),
+               dropshadow(gaussian, rgba(0,0,0,0.25), 5, 0, 0, 3);
+    -fx-translate-y: 0;
+    -fx-border-insets: 0 0 2 0;
+    -fx-background-insets: 0 0 2 0;
+}
+
+.start-btn:hover {
+    -fx-background-color: linear-gradient(to bottom right, #fee140, #fa709a);
+    -fx-effect: innershadow(gaussian, rgba(255,255,255,0.7), 6, 0.7, 0, 1),
+               dropshadow(gaussian, rgba(0,0,0,0.3), 7, 0, 0, 4);
+    -fx-scale-x: 1.1;
+    -fx-scale-y: 1.1;
+    -fx-translate-y: -1;
+}
+
+.start-btn:pressed {
+    -fx-effect: innershadow(gaussian, rgba(255,255,255,0.3), 2, 0.3, 0, 1),
+               dropshadow(gaussian, rgba(0,0,0,0.2), 3, 0, 0, 2);
+    -fx-translate-y: 1;
+}
+
+.action-btn {
+    -fx-background-color: linear-gradient(to bottom right, #667eea, #764ba2);
+    -fx-text-fill: white;
+    -fx-font-size: 12px;
+    -fx-font-weight: bold;
+    -fx-padding: 8 16 8 16;
+    -fx-background-radius: 15px;
+    -fx-cursor: hand;
+    -fx-border-width: 0;
+    -fx-effect: innershadow(gaussian, rgba(255,255,255,0.5), 4, 0.5, 0, 1),
+               dropshadow(gaussian, rgba(0,0,0,0.25), 5, 0, 0, 3);
+    -fx-translate-y: 0;
+    -fx-border-insets: 0 0 2 0;
+    -fx-background-insets: 0 0 2 0;
+}
+
+.action-btn:hover {
+    -fx-background-color: linear-gradient(to bottom right, #764ba2, #667eea);
+    -fx-effect: innershadow(gaussian, rgba(255,255,255,0.7), 6, 0.7, 0, 1),
+               dropshadow(gaussian, rgba(0,0,0,0.3), 7, 0, 0, 4);
+    -fx-scale-x: 1.1;
+    -fx-scale-y: 1.1;
+    -fx-translate-y: -1;
+}
+
+.action-btn:pressed {
+    -fx-effect: innershadow(gaussian, rgba(255,255,255,0.3), 2, 0.3, 0, 1),
+               dropshadow(gaussian, rgba(0,0,0,0.2), 3, 0, 0, 2);
+    -fx-translate-y: 1;
+}
+
+.sync-btn {
+    -fx-background-color: linear-gradient(to bottom right, #4facfe, #00f2fe);
+    -fx-text-fill: white;
+    -fx-font-size: 11px;
+    -fx-padding: 6 12 6 12;
+    -fx-background-radius: 15px;
+    -fx-cursor: hand;
+    -fx-border-width: 0;
+    -fx-effect: innershadow(gaussian, rgba(255,255,255,0.5), 3, 0.5, 0, 1),
+               dropshadow(gaussian, rgba(0,0,0,0.2), 3, 0, 0, 2);
+    -fx-translate-y: 0;
+    -fx-border-insets: 0 0 2 0;
+    -fx-background-insets: 0 0 2 0;
+}
+
+.sync-btn:hover {
+    -fx-background-color: linear-gradient(to bottom right, #00f2fe, #4facfe);
+    -fx-effect: innershadow(gaussian, rgba(255,255,255,0.7), 5, 0.7, 0, 1),
+               dropshadow(gaussian, rgba(0,0,0,0.25), 5, 0, 0, 3);
+    -fx-scale-x: 1.1;
+    -fx-scale-y: 1.1;
+    -fx-translate-y: -1;
+}
+
+.sync-btn:pressed {
+    -fx-effect: innershadow(gaussian, rgba(255,255,255,0.3), 1, 0.3, 0, 1),
+               dropshadow(gaussian, rgba(0,0,0,0.15), 2, 0, 0, 1);
+    -fx-translate-y: 1;
+}
+
+/* ============================================
+   STAT CARDS - Enhanced 3D Effects
+   ============================================ */
+.stat-card {
+    -fx-background-color: white;
+    -fx-background-radius: 20px;
+    -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.15), 10, 0, 0, 5);
+    -fx-pref-width: 200px;
+    -fx-min-width: 200px;
+    -fx-padding: 20;
+    -fx-translate-y: 0;
+    -fx-border-insets: 0 0 5 0;
+    -fx-background-insets: 0 0 5 0;
+}
+
+.stat-card:hover {
+    -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.25), 15, 0, 0, 8);
+    -fx-scale-x: 1.05;
+    -fx-scale-y: 1.05;
+    -fx-translate-y: -3;
+}
+
+.steps-card {
+    -fx-border-color: #43e97b;
+    -fx-border-width: 3;
+    -fx-border-radius: 20px;
+    -fx-background-color: linear-gradient(to bottom right, #43e97b 0%, #ffffff 15%, #ffffff 85%, #38f9d7 100%);
+    -fx-effect: dropshadow(gaussian, rgba(67, 233, 123, 0.3), 10, 0, 0, 5),
+               innershadow(gaussian, rgba(255,255,255,0.8), 5, 0.5, 0, 1);
+}
+
+.calories-card {
+    -fx-border-color: #fa709a;
+    -fx-border-width: 3;
+    -fx-border-radius: 20px;
+    -fx-background-color: linear-gradient(to bottom right, #fa709a 0%, #ffffff 15%, #ffffff 85%, #fee140 100%);
+    -fx-effect: dropshadow(gaussian, rgba(250, 112, 154, 0.3), 10, 0, 0, 5),
+               innershadow(gaussian, rgba(255,255,255,0.8), 5, 0.5, 0, 1);
+}
+
+.water-card {
+    -fx-border-color: #4facfe;
+    -fx-border-width: 3;
+    -fx-border-radius: 20px;
+    -fx-background-color: linear-gradient(to bottom right, #4facfe 0%, #ffffff 15%, #ffffff 85%, #00f2fe 100%);
+    -fx-effect: dropshadow(gaussian, rgba(79, 172, 254, 0.3), 10, 0, 0, 5),
+               innershadow(gaussian, rgba(255,255,255,0.8), 5, 0.5, 0, 1);
+}
+
+.sleep-card {
+    -fx-border-color: #667eea;
+    -fx-border-width: 3;
+    -fx-border-radius: 20px;
+    -fx-background-color: linear-gradient(to bottom right, #667eea 0%, #ffffff 15%, #ffffff 85%, #764ba2 100%);
+    -fx-effect: dropshadow(gaussian, rgba(102, 126, 234, 0.3), 10, 0, 0, 5),
+               innershadow(gaussian, rgba(255,255,255,0.8), 5, 0.5, 0, 1);
+}
+
+.stat-icon {
+    -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.3), 5, 0, 0, 3);
+}
+
+.steps-icon {
+    -fx-fill: linear-gradient(to bottom right, #43e97b, #38f9d7);
+}
+
+.calories-icon {
+    -fx-fill: linear-gradient(to bottom right, #fa709a, #fee140);
+}
+
+.water-icon {
+    -fx-fill: linear-gradient(to bottom right, #4facfe, #00f2fe);
+}
+
+.sleep-icon {
+    -fx-fill: linear-gradient(to bottom right, #667eea, #764ba2);
+}
+
+.stat-number {
+    -fx-text-fill: #2c3e50;
+    -fx-font-size: 24px;
+    -fx-font-weight: bold;
+    -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.1), 1, 0, 0, 1);
+}
+
+.stat-label {
+    -fx-text-fill: #6c757d;
+    -fx-font-size: 12px;
+    -fx-font-weight: bold;
+}
+
+.stat-percentage {
+    -fx-text-fill: #6c757d;
+    -fx-font-size: 11px;
+}
+
+/* ============================================
+   PROGRESS BARS
+   ============================================ */
+.stat-progress {
+    -fx-pref-width: 120px;
+    -fx-pref-height: 8px;
+    -fx-background-radius: 4px;
+    -fx-background-color: #e9ecef;
+}
+
+.stat-progress .bar {
+    -fx-background-radius: 4px;
+    -fx-padding: 0;
+    -fx-effect: innershadow(gaussian, rgba(255,255,255,0.5), 3, 0.3, 0, 1);
+}
+
+.steps-progress .bar {
+    -fx-background-color: linear-gradient(to right, #43e97b, #38f9d7);
+}
+
+.calories-progress .bar {
+    -fx-background-color: linear-gradient(to right, #fa709a, #fee140);
+}
+
+.water-progress .bar {
+    -fx-background-color: linear-gradient(to right, #4facfe, #00f2fe);
+}
+
+.sleep-progress .bar {
+    -fx-background-color: linear-gradient(to right, #667eea, #764ba2);
+}
+
+.macro-progress {
+    -fx-pref-width: 100px;
+    -fx-pref-height: 6px;
+    -fx-background-radius: 3px;
+    -fx-background-color: #e9ecef;
+}
+
+.macro-progress .bar {
+    -fx-background-radius: 3px;
+    -fx-effect: innershadow(gaussian, rgba(255,255,255,0.5), 2, 0.3, 0, 1);
+}
+
+.protein-progress .bar {
+    -fx-background-color: linear-gradient(to right, #fa709a, #fee140);
+}
+
+.carbs-progress .bar {
+    -fx-background-color: linear-gradient(to right, #4facfe, #00f2fe);
+}
+
+.fats-progress .bar {
+    -fx-background-color: linear-gradient(to right, #667eea, #764ba2);
+}
+
+.week-progress {
+    -fx-pref-width: 200px;
+    -fx-pref-height: 10px;
+    -fx-background-radius: 5px;
+    -fx-background-color: #e9ecef;
+}
+
+.week-progress .bar {
+    -fx-background-color: linear-gradient(to right, #43e97b, #38f9d7);
+    -fx-background-radius: 5px;
+    -fx-effect: innershadow(gaussian, rgba(255,255,255,0.5), 4, 0.4, 0, 1);
+}
+
+/* ============================================
+   DASHBOARD CARDS - Enhanced 3D Effects
+   ============================================ */
+.dashboard-card {
+    -fx-background-color: white;
+    -fx-background-radius: 25px;
+    -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.15), 15, 0, 0, 8);
+    -fx-pref-width: 350px;
+    -fx-padding: 25;
+    -fx-translate-y: 0;
+    -fx-border-insets: 0 0 5 0;
+    -fx-background-insets: 0 0 5 0;
+}
+
+.dashboard-card:hover {
+    -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.25), 20, 0, 0, 12);
+    -fx-scale-x: 1.02;
+    -fx-scale-y: 1.02;
+    -fx-translate-y: -3;
+}
+
+.left-column {
+    -fx-pref-width: 350px;
+    -fx-spacing: 20;
+}
+
+.right-column {
+    -fx-pref-width: 300px;
+    -fx-spacing: 20;
+}
+
+.card-icon {
+    -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.3), 8, 0, 0, 4);
+}
+
+.workout-icon {
+    -fx-fill: linear-gradient(to bottom right, #fa709a, #fee140);
+}
+
+.nutrition-icon {
+    -fx-fill: linear-gradient(to bottom right, #43e97b, #38f9d7);
+}
+
+.heart-icon {
+    -fx-fill: linear-gradient(to bottom right, #f093fb, #f5576c);
+}
+
+.progress-icon {
+    -fx-fill: linear-gradient(to bottom right, #4facfe, #00f2fe);
+}
+
+.card-title {
+    -fx-text-fill: #2c3e50;
+    -fx-font-size: 18px;
+    -fx-font-weight: bold;
+    -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.1), 1, 0, 0, 1);
+}
+
+.card-subtitle {
+    -fx-text-fill: #6c757d;
+    -fx-font-size: 13px;
+}
+
+/* ============================================
+   EXERCISE DOTS
+   ============================================ */
+.exercise-dot {
+    -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.3), 3, 0, 0, 2);
+    -fx-radius: 6;
+}
+
+.dot-1 {
+    -fx-fill: linear-gradient(to bottom right, #fa709a, #fee140);
+}
+
+.dot-2 {
+    -fx-fill: linear-gradient(to bottom right, #4facfe, #00f2fe);
+}
+
+.dot-3 {
+    -fx-fill: linear-gradient(to bottom right, #43e97b, #38f9d7);
+}
+
+.dot-4 {
+    -fx-fill: linear-gradient(to bottom right, #667eea, #764ba2);
+}
+
+.exercise-text {
+    -fx-text-fill: #2c3e50;
+    -fx-font-size: 13px;
+    -fx-font-weight: 500;
+}
+
+/* ============================================
+   MACRO TRACKING
+   ============================================ */
+.macro-label {
+    -fx-text-fill: #2c3e50;
+    -fx-font-size: 12px;
+    -fx-font-weight: bold;
+    -fx-min-width: 60px;
+}
+
+.macro-value {
+    -fx-text-fill: #6c757d;
+    -fx-font-size: 12px;
+    -fx-min-width: 40px;
+}
+
+/* ============================================
+   HEART RATE MONITOR
+   ============================================ */
+.heart-rate-card {
+    -fx-background-color: linear-gradient(to bottom right, #ffffff, #f8f9fa);
+    -fx-border-color: #f093fb;
+    -fx-border-width: 2;
+    -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.15), 15, 0, 0, 8),
+               innershadow(gaussian, rgba(255,255,255,0.8), 5, 0.5, 0, 1);
+}
+
+.heart-rate-number {
+    -fx-text-fill: #2c3e50;
+    -fx-font-size: 48px;
+    -fx-font-weight: bold;
+    -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.1), 2, 0, 0, 2);
+}
+
+.heart-rate-unit {
+    -fx-text-fill: #6c757d;
+    -fx-font-size: 16px;
+}
+
+.heart-rate-status {
+    -fx-text-fill: #43e97b;
+    -fx-font-size: 14px;
+    -fx-font-weight: bold;
+    -fx-effect: dropshadow(gaussian, rgba(67, 233, 123, 0.3), 3, 0, 0, 1);
+}
+
+.zone-indicator {
+    -fx-arc-width: 3;
+    -fx-arc-height: 3;
+    -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.2), 3, 0, 0, 1);
+}
+
+.zone-1 {
+    -fx-fill: linear-gradient(to bottom right, #43e97b, #38f9d7);
+}
+
+.zone-2 {
+    -fx-fill: linear-gradient(to bottom right, #fa709a, #fee140);
+}
+
+.zone-3 {
+    -fx-fill: linear-gradient(to bottom right, #f093fb, #f5576c);
+}
+
+.zone-text {
+    -fx-text-fill: #6c757d;
+    -fx-font-size: 11px;
+}
+
+/* ============================================
+   WEEKLY PROGRESS
+   ============================================ */
+.day-label {
+    -fx-text-fill: #6c757d;
+    -fx-font-size: 11px;
+    -fx-font-weight: bold;
+}
+
+.day-circle {
+    -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.3), 5, 0, 0, 3);
+    -fx-radius: 12;
+}
+
+.day-completed {
+    -fx-fill: linear-gradient(to bottom right, #43e97b, #38f9d7);
+}
+
+.day-pending {
+    -fx-fill: linear-gradient(to bottom right, #fa709a, #fee140);
+}
+
+.day-rest {
+    -fx-fill: linear-gradient(to bottom right, #e9ecef, #dee2e6);
+}
+
+.week-percentage {
+    -fx-text-fill: #2c3e50;
+    -fx-font-size: 12px;
+    -fx-font-weight: bold;
+}
+
+/* ============================================
+   QUICK ACTION CARDS - Enhanced 3D Effects
+   ============================================ */
+.quick-action-card {
+    -fx-background-color: white;
+    -fx-background-radius: 20px;
+    -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.15), 10, 0, 0, 5);
+    -fx-pref-width: 150px;
+    -fx-pref-height: 180px;
+    -fx-padding: 20;
+    -fx-translate-y: 0;
+    -fx-border-insets: 0 0 5 0;
+    -fx-background-insets: 0 0 5 0;
+}
+
+.quick-action-card:hover {
+    -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.25), 15, 0, 0, 8);
+    -fx-scale-x: 1.08;
+    -fx-scale-y: 1.08;
+    -fx-translate-y: -3;
+}
+
+.action-icon {
+    -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.3), 8, 0, 0, 4);
+}
+
+.meditation-icon {
+    -fx-fill: linear-gradient(to bottom right, #667eea, #764ba2);
+}
+
+.timer-icon {
+    -fx-fill: linear-gradient(to bottom right, #fa709a, #fee140);
+}
+
+.recipe-icon {
+    -fx-fill: linear-gradient(to bottom right, #43e97b, #38f9d7);
+}
+
+.challenge-icon {
+    -fx-fill: linear-gradient(to bottom right, #f093fb, #f5576c);
+}
+
+.action-title {
+    -fx-text-fill: #2c3e50;
+    -fx-font-size: 14px;
+    -fx-font-weight: bold;
+}
+
+.action-subtitle {
+    -fx-text-fill: #6c757d;
+    -fx-font-size: 12px;
+}
+
+/* ============================================
+   BOTTOM BAR
+   ============================================ */
+.bottom-bar {
+    -fx-background-color: linear-gradient(to bottom right, #2c3e50, #34495e);
+    -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.3), 10, 0, 0, -3);
+    -fx-padding: 15;
+}
+
+.status-dot {
+    -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.4), 5, 0, 0, 2);
+    -fx-radius: 6;
+}
+
+.status-connected {
+    -fx-fill: linear-gradient(to bottom right, #43e97b, #38f9d7);
+}
+
+.status-text {
+    -fx-text-fill: #e8e8e8;
+    -fx-font-size: 12px;
+    -fx-font-weight: 500;
+}
+
+.sync-text {
+    -fx-text-fill: #bdc3c7;
+    -fx-font-size: 11px;
+}
+
+/* ============================================
+   ANIMATIONS & EFFECTS
+   ============================================ */
+.pulse-animation {
+    -fx-effect: dropshadow(gaussian, rgba(67, 233, 123, 0.6), 15, 0, 0, 5);
+    -fx-animation: pulse 2s infinite;
+}
+
+@keyframes pulse {
+    0% {
+        -fx-effect: dropshadow(gaussian, rgba(67, 233, 123, 0.4), 10, 0, 0, 3);
+    }
+    50% {
+        -fx-effect: dropshadow(gaussian, rgba(67, 233, 123, 0.8), 20, 0, 0, 8);
+    }
+    100% {
+        -fx-effect: dropshadow(gaussian, rgba(67, 233, 123, 0.4), 10, 0, 0, 3);
+    }
+}
+
+.heartbeat-animation {
+    -fx-effect: dropshadow(gaussian, rgba(240, 147, 251, 0.7), 20, 0, 0, 5);
+    -fx-animation: heartbeat 1.5s infinite;
+}
+
+@keyframes heartbeat {
+    0% {
+        -fx-scale-x: 1;
+        -fx-scale-y: 1;
+    }
+    25% {
+        -fx-scale-x: 1.05;
+        -fx-scale-y: 1.05;
+    }
+    50% {
+        -fx-scale-x: 1;
+        -fx-scale-y: 1;
+    }
+    75% {
+        -fx-scale-x: 1.05;
+        -fx-scale-y: 1.05;
+    }
+    100% {
+        -fx-scale-x: 1;
+        -fx-scale-y: 1;
+    }
+}
+
+.blink-animation {
+    -fx-effect: dropshadow(gaussian, rgba(67, 233, 123, 0.8), 10, 0, 0, 3);
+    -fx-animation: blink 1.5s infinite;
+}
+
+@keyframes blink {
+    0% {
+        -fx-opacity: 1;
+    }
+    50% {
+        -fx-opacity: 0.5;
+    }
+    100% {
+        -fx-opacity: 1;
+    }
+}
+
+.bounce-animation {
+    -fx-animation: bounce 1s infinite alternate;
+}
+
+@keyframes bounce {
+    from {
+        -fx-translate-y: 0;
+    }
+    to {
+        -fx-translate-y: -5;
+    }
+}
+
+.float-animation {
+    -fx-animation: float 3s infinite alternate;
+}
+
+@keyframes float {
+    from {
+        -fx-translate-y: 0;
+    }
+    to {
+        -fx-translate-y: -8;
+    }
+}
+
+.rotate-animation {
+    -fx-animation: rotate 4s infinite linear;
+}
+
+@keyframes rotate {
+    from {
+        -fx-rotate: 0;
+    }
+    to {
+        -fx-rotate: 360;
+    }
+}
+
+.shake-animation {
+    -fx-animation: shake 0.5s infinite alternate;
+}
+
+@keyframes shake {
+    0% {
+        -fx-translate-x: 0;
+    }
+    25% {
+        -fx-translate-x: -3;
+    }
+    50% {
+        -fx-translate-x: 3;
+    }
+    75% {
+        -fx-translate-x: -3;
+    }
+    100% {
+        -fx-translate-x: 3;
+    }
+}
+
+/* ============================================
+   SCROLL BAR STYLING
+   ============================================ */
+.scroll-bar {
+    -fx-background-color: transparent;
+}
+
+.scroll-bar .track {
+    -fx-background-color: #f8f9fa;
+    -fx-background-radius: 5px;
+}
+
+.scroll-bar .thumb {
+    -fx-background-color: linear-gradient(to bottom, #667eea, #764ba2);
+    -fx-background-radius: 5px;
+    -fx-effect: innershadow(gaussian, rgba(255,255,255,0.5), 3, 0.3, 0, 1);
+}
+
+.scroll-bar .thumb:hover {
+    -fx-background-color: linear-gradient(to bottom, #764ba2, #667eea);
+}
+
+/* ============================================
+   ADDITIONAL ENHANCEMENTS
+   ============================================ */
+.glass-effect {
+    -fx-background-color: rgba(255, 255, 255, 0.9);
+    -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.1), 20, 0, 0, 10);
+    -fx-background-radius: 25px;
+}
+
+.glow-effect {
+    -fx-effect: dropshadow(gaussian, rgba(102, 126, 234, 0.5), 20, 0, 0, 0);
+}
+
+.floating-card {
+    -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.2), 25, 0, 0, 15);
+    -fx-background-color: white;
+    -fx-background-radius: 30px;
+}
+
+.gradient-text {
+    -fx-fill: linear-gradient(to bottom right, #667eea, #764ba2);
+    -fx-font-weight: bold;
+}
+
+/* ============================================
+   RESPONSIVE & ACCESSIBILITY
+   ============================================ */
+.high-contrast {
+    -fx-text-fill: #000000;
+    -fx-background-color: #ffffff;
+    -fx-border-color: #000000;
+    -fx-border-width: 2;
+}
+
+.focus-indicator {
+    -fx-border-color: #4facfe;
+    -fx-border-width: 3;
+    -fx-border-radius: 5px;
+    -fx-effect: dropshadow(gaussian, rgba(79, 172, 254, 0.5), 10, 0, 0, 0);
+}
